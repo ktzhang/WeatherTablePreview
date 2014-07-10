@@ -5,11 +5,13 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>1D01CC05-C676-4726-B60B-91CC65583645</string>
+	<string>DEEA4BA7-0384-4570-8057-573551D38D51</string>
 	<key>IDESourceControlProjectName</key>
 	<string>WeatherWidgetView</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>8ED37172-6BF2-4DB6-8972-12563B7E30AD</key>
+		<string>ssh://github.com/ktzhang/WeatherTablePreview.git</string>
 		<key>F69F7850-B6B0-4D48-AA85-E2102DDAE47D</key>
 		<string>ssh://github.com/LukasCZ/TodayExtensionSharingDefaults.git</string>
 	</dict>
@@ -17,11 +19,13 @@
 	<string>WeatherWidgetView/WeatherWidgetView.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>8ED37172-6BF2-4DB6-8972-12563B7E30AD</key>
+		<string>../..</string>
 		<key>F69F7850-B6B0-4D48-AA85-E2102DDAE47D</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/LukasCZ/TodayExtensionSharingDefaults.git</string>
+	<string>ssh://github.com/ktzhang/WeatherTablePreview.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
@@ -35,6 +39,14 @@
 			<string>F69F7850-B6B0-4D48-AA85-E2102DDAE47D</string>
 			<key>IDESourceControlWCCName</key>
 			<string>test-ios</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8ED37172-6BF2-4DB6-8972-12563B7E30AD</string>
+			<key>IDESourceControlWCCName</key>
+			<string>WeatherWidgetView</string>
 		</dict>
 	</array>
 </dict>

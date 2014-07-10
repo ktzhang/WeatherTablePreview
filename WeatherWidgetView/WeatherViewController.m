@@ -40,8 +40,10 @@ static NSString *CellClassName = @"WeatherDayCell";
             cellLoader = [UINib nibWithNibName:CellClassName bundle:[NSBundle mainBundle]];
         }
         //Setting the row height
-        self.tableView.rowHeight = 111;
+        self.tableView.rowHeight = 81;
         self.tableView.delegate = self;
+        self.tableView.separatorColor = [UIColor clearColor];
+
     }
     NSLog(@"sizeof(NSInteger) = %@", @(sizeof(NSInteger)));
     return self;
@@ -52,6 +54,7 @@ static NSString *CellClassName = @"WeatherDayCell";
     return [self init];
 }
 
+//Needed to resize the image
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [self.tableView reloadData];
 }
@@ -86,6 +89,8 @@ static NSString *CellClassName = @"WeatherDayCell";
         cell = [topLevelItems objectAtIndex:0];
 
     }
+    
+    NSLog(@"Cell height %f", cell.frame.size.height);
     
     cell.highTempLabel.text = @"189º";
     //cell.imageView.frame.size =
