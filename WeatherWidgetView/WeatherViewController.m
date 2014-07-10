@@ -92,7 +92,7 @@ static NSString *CellClassName = @"WeatherDayCell";
     
     NSLog(@"Cell height %f", cell.frame.size.height);
     
-    cell.highTempLabel.text = @"189º";
+//    cell.highTempLabel.text = @"189º";
     //cell.imageView.frame.size =
     //cell.nameLabel.text = @"fired!";
     //cell.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"clear_day@2x.png"]];
