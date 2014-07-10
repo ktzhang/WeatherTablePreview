@@ -41,6 +41,7 @@ static NSString *CellClassName = @"WeatherDayCell";
         }
         //Setting the row height
         self.tableView.rowHeight = 111;
+        self.tableView.delegate = self;
     }
     NSLog(@"sizeof(NSInteger) = %@", @(sizeof(NSInteger)));
     return self;
@@ -51,6 +52,15 @@ static NSString *CellClassName = @"WeatherDayCell";
     return [self init];
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self.tableView reloadData];
+}
+
+
+- (void) tableView:(UITableView *)tableView didHighlightRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self.tableView reloadData];
+
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -76,6 +86,9 @@ static NSString *CellClassName = @"WeatherDayCell";
         cell = [topLevelItems objectAtIndex:0];
 
     }
+    
+    cell.highTempLabel.text = @"189º";
+    //cell.imageView.frame.size =
     //cell.nameLabel.text = @"fired!";
     //cell.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"clear_day@2x.png"]];
     return cell;
